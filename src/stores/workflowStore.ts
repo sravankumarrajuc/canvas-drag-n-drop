@@ -363,7 +363,7 @@ async function executeNodeChain(
           console.log(`💬 Original prompt template:`, promptTemplate);
           console.log(`💬 Processed prompt:`, processedPrompt);
           
-          const response = await fetch('https://armblanzbowvppzyvqad.supabase.co/functions/v1/llm-processor', {
+          const response = await fetch('http://localhost:3001/api/llm-processor', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
