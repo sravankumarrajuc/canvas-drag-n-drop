@@ -121,10 +121,10 @@ export const WorkflowToolbar: React.FC = () => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => createNode('trigger')}>
+              {/* <DropdownMenuItem onClick={() => createNode('trigger')}>
                 <Zap className="mr-2 h-4 w-4" />
                 Trigger Node
-              </DropdownMenuItem>
+              </DropdownMenuItem> */}
               <DropdownMenuItem onClick={() => createNode('function')}>
                 <Code className="mr-2 h-4 w-4" />
                 Function Node
@@ -133,10 +133,10 @@ export const WorkflowToolbar: React.FC = () => {
                 <Globe className="mr-2 h-4 w-4" />
                 API Node
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => createNode('utility')}>
+              {/* <DropdownMenuItem onClick={() => createNode('utility')}>
                 <Settings className="mr-2 h-4 w-4" />
                 Utility Node
-              </DropdownMenuItem>
+              </DropdownMenuItem> */}
               <DropdownMenuItem onClick={() => createNode('llm')}>
                 <Brain className="mr-2 h-4 w-4" />
                 LLM Processor
